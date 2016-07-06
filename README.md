@@ -11,3 +11,4 @@
 [![Test Coverage](https://codeclimate.com/github/proux/rage4service/badges/coverage.svg)](https://codeclimate.com/github/proux/rage4service/coverage)
 [![Dependency Status](https://david-dm.org/proux/rage4service.svg)](https://david-dm.org/proux/rage4service)
 [![devDependency Status](https://david-dm.org/proux/rage4service/dev-status.svg)](https://david-dm.org/proux/rage4service#info=devDependencies)
+ 
