@@ -5,7 +5,7 @@
   "scripts": {
     "compile": "coffee --compile --bare --no-header --output lib/ src/index.coffee",
     "pretest": "npm run compile",
-    "test": "snyk test && npm run lint && npm run mocha && npm run coverage",
+    "test": "snyk test -d && npm run lint && npm run mocha && npm run coverage",
     "mocha": "mocha --recursive --compilers coffee:coffee-script/register --require coffee-coverage/register-istanbul test",
     "coverage": "istanbul report",
     "lint": "coffeelint -r src test",
