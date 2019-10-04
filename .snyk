@@ -1,8 +1,15 @@
-version: v1.5.0
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
 ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':
     - istanbul > fileset > minimatch:
         patched: '2016-07-05T20:40:06.486Z'
-      istanbul > fileset > glob > minimatch:
+    - istanbul > fileset > glob > minimatch:
         patched: '2016-07-06T09:48:12.531Z'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - snyk > proxy-agent > https-proxy-agent:
+        patched: '2019-10-04T21:16:50.718Z'
+    - snyk > proxy-agent > pac-proxy-agent > https-proxy-agent:
+        patched: '2019-10-04T21:16:50.718Z'
