@@ -1,8 +1,15 @@
-version: v1.5.0
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
 ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':
     - istanbul > fileset > minimatch:
         patched: '2016-07-05T20:40:06.486Z'
-      istanbul > fileset > glob > minimatch:
+    - istanbul > fileset > glob > minimatch:
         patched: '2016-07-06T09:48:12.531Z'
+  SNYK-JS-LODASH-567746:
+    - request-promise > lodash:
+        patched: '2020-04-30T21:18:18.013Z'
+    - gaze > globule > lodash:
+        patched: '2020-04-30T21:18:18.013Z'
